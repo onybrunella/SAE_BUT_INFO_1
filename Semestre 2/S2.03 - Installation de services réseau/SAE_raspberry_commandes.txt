@@ -1,0 +1,98 @@
+1/
+sudo apt update 
+sudo apt upgrade
+
+
+2/
+sudo raspi-config 
+sudo systemctl stop postgresql.service
+sudo systemctl disable postgresql.service
+
+
+3/
+sudo apt install maria
+
+
+4/
+sudo useradd e(votre num etudiant) --shell /bin/bash
+
+
+5/
+sudo apt install mariadb-server
+sudo apt install php-mysql
+
+
+6/
+sudo nano /etc/php/7.3/apache2/php.ini 	## Trouver "extension=pdo_mysql" ett enlever le ";" puis sauvegarder
+
+sudo mysql
+CREATE DATABASE e(votre num etudiant);
+CREATE USER 'e(votre num etudiant)'@'localhost' IDENTIFIED by '(un MDP)';
+GRANT ALL PRIVILEGES ON e(votre num etudiant).* to 'e(votre num etudiant)'@'localhost';
+FLUSH PRIVILEGES;
+
+
+7/
+sudo mkdir /home/e(votre num etudiant)/public_html
+
+
+8/
+sudo systemctl status apache2	## Voir si il est bien actif sinon regarder SAE 1.03
+
+
+9/
+sudo mysql -ue(votre num etudiant) -p	## Mettre MDP defini précédement 
+use e(votre num etudiant);
+CREATE TABLE personnes(Nom varchar(50), Prénom varchar(50));
+INSERT INTO personnes(Nom, Prénom) VALUES ('Jean Sans Terre', 'Edouard'), ('D’aquitaine', 'Éléonore'), ('Cœur de Lion', 'Richard');
+SELECT * FROM personnes;
+
+
+10/
+sudo touch /home/e(votre num etudiant)/public_html/index.php
+sudo nano /home/e(votre num etudiant)/public_html/index.php
+
+COPIE COLLE CA ET OUBLIE PAS DE CHANGER LES DONNEES
+
+<?php
+	$dbuser='e(votre num etudiant)'; // à changer !
+	$dbname='e(votre num etudiant)'; // à changer !
+	$password='(MDP PRECEDEMENT MIS POUR MARIADB)'; // à changer !
+	try {
+		$conn=new PDO("mysql:host=localhost;dbname=$dbname", $dbuser, $password);
+	} catch (PDOException $e) {
+		die("Pb connexion base de données $dbname:" . $e->getMessage());
+	}
+	$sql = use e12101707;
+	$sql = "SELECT * FROM personnes";
+	$req = $conn->query($sql);
+?>
+<html><head>Table personnes</head>
+<body>
+	<table>
+		<thead><tr><th>Nom</th><th>Prénom</th></tr></thead>
+		<tbody>
+			<?php while($row = $req->fetch(PDO::FETCH_ASSOC)) : ?>
+			<tr>
+				<td><?php echo htmlspecialchars($row['Nom']); ?></td>
+				<td><?php echo htmlspecialchars($row['Prénom']); ?></td>
+			</tr>
+			<?php endwhile; ?>
+		</tbody>
+	</table>
+</body>
+</html>
+
+
+11/
+links http://localhost/∼e(votre num etudiant)		## Si ca marche pas faite 'sudo apt install links'
+TEST sur votre Navigateur (windows/mac/linux) --> http://192.168.1.18/~e(votre num etudiant)/index.php 
+
+Si lorsque vous etes sur le site affiche la table personnes avec leur Nom et Prénom vous avez reussi GG
+
+
+12/
+Suivre le lien https://fr-wiki.ikoula.com/fr/Mise_en_place_de_phpMyAdmin_sous_debian_10
+juste modifier commande 'tar xvf phpMyAdmin-4.9.5-all-languages.tar.gz' par 'unzip phpMyAdmin-4.9.5-all-languages.tar.gz'
+
+Suivre le site jusqu'à Sécurisation de phpMyAdmin (en dessous de ca pas obligatoire)

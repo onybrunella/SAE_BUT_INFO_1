@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8"?><project name="Réaménagement" company="" webLink="http://" view-date="2022-07-03" view-index="1" gantt-divider-location="566" resource-divider-location="300" version="3.1.3100" locale="fr_FR">
+    <description/>
+    <view zooming-state="default:2" id="gantt-chart">
+        <field id="tpd3" name="Nom" width="266" order="0"/>
+        <field id="tpd4" name="Date de début" width="148" order="1"/>
+        <field id="tpd5" name="Date de fin" width="148" order="2"/>
+        <option id="color.recent">
+            <![CDATA[#9999ff #33cc00 #000066 #cc0000]]>
+        </option>
+    </view>
+    <view id="resource-table">
+        <field id="0" name="Nom" width="210" order="0"/>
+        <field id="1" name="Rôle par défaut" width="86" order="1"/>
+    </view>
+    <!-- -->
+    <calendars>
+        <day-types>
+            <day-type id="0"/>
+            <day-type id="1"/>
+            <default-week id="1" name="default" sun="1" mon="0" tue="0" wed="0" thu="0" fri="0" sat="1"/>
+            <only-show-weekends value="true"/>
+            <overriden-day-types/>
+            <days/>
+        </day-types>
+    </calendars>
+    <tasks empty-milestones="true">
+        <taskproperties>
+            <taskproperty id="tpd0" name="type" type="default" valuetype="icon"/>
+            <taskproperty id="tpd1" name="priority" type="default" valuetype="icon"/>
+            <taskproperty id="tpd2" name="info" type="default" valuetype="icon"/>
+            <taskproperty id="tpd3" name="name" type="default" valuetype="text"/>
+            <taskproperty id="tpd4" name="begindate" type="default" valuetype="date"/>
+            <taskproperty id="tpd5" name="enddate" type="default" valuetype="date"/>
+            <taskproperty id="tpd6" name="duration" type="default" valuetype="int"/>
+            <taskproperty id="tpd7" name="completion" type="default" valuetype="int"/>
+            <taskproperty id="tpd8" name="coordinator" type="default" valuetype="text"/>
+            <taskproperty id="tpd9" name="predecessorsr" type="default" valuetype="text"/>
+        </taskproperties>
+        <task id="0" name="Acheter le matériel nécessaire pour la rénovation des murs ainsi que le parquet" color="#9999ff" meeting="false" start="2022-07-01" duration="2" complete="0" thirdDate="2022-07-01" thirdDate-constraint="0" expand="true"/>
+        <task id="1" name="Vider toute la pièce de tous les objets , y compris les murs" color="#9999ff" meeting="false" start="2022-07-02" duration="2" complete="0" thirdDate="2022-07-01" thirdDate-constraint="0" expand="true"/>
+        <task id="2" name="Isoler les murs de la pièce" color="#9999ff" meeting="false" start="2022-07-03" duration="3" complete="0" thirdDate="2022-07-03" thirdDate-constraint="1" expand="true"/>
+        <task id="3" name="Installer des cloisons" color="#9999ff" meeting="false" start="2022-07-05" duration="3" complete="0" thirdDate="2022-03-10" thirdDate-constraint="0" expand="true"/>
+        <task id="4" name="Application de l'enduit lissant sur les murs" color="#9999ff" meeting="false" start="2022-07-07" duration="3" complete="0" thirdDate="2022-07-09" thirdDate-constraint="0" expand="true"/>
+        <task id="5" name="Poser un papier peint (intissé)" color="#9999ff" meeting="false" start="2022-07-09" duration="2" complete="0" thirdDate="2022-07-09" thirdDate-constraint="0" expand="true"/>
+        <task id="6" name="Poser le parquet" color="#9999ff" meeting="false" start="2022-07-10" duration="2" complete="0" thirdDate="2022-07-01" thirdDate-constraint="0" expand="true"/>
+        <task id="7" name="Acheter le matériel nécessaire pour le coin douche" color="#33cc00" meeting="false" start="2022-07-11" duration="2" complete="0" thirdDate="2022-07-01" thirdDate-constraint="0" expand="true"/>
+        <task id="8" name="Revetement des sols pour le coin douche" color="#33cc00" meeting="false" start="2022-07-12" duration="3" complete="0" thirdDate="2022-07-01" thirdDate-constraint="0" expand="true"/>
+        <task id="9" name="Installer et équiper le coin douche" color="#33cc00" meeting="false" start="2022-07-14" duration="2" complete="0" thirdDate="2022-07-01" thirdDate-constraint="0" expand="true"/>
+        <task id="10" name="Installer une ventilation dans le coin douche" color="#33cc00" meeting="false" start="2022-07-15" duration="2" complete="0" thirdDate="2022-07-01" thirdDate-constraint="0" expand="true"/>
+        <task id="11" name="Installation d'une conduite d'eau au coin douche (distribution et évacuation)" color="#33cc00" meeting="false" start="2022-07-16" duration="3" complete="0" thirdDate="2022-07-01" thirdDate-constraint="0" expand="true"/>
+        <task id="12" name="Poser le système éléctrique et les prises dans le coin douche" color="#33cc00" meeting="false" start="2022-07-18" duration="3" complete="0" thirdDate="2022-03-10" thirdDate-constraint="0" expand="true"/>
+        <task id="13" name="Acheter la deco et le mobilier" color="#000066" meeting="false" start="2022-08-01" duration="2" complete="0" thirdDate="2022-03-10" thirdDate-constraint="0" expand="true"/>
+        <task id="16" name="Poser une nouvelle porte" color="#000066" meeting="false" start="2022-08-02" duration="3" complete="0" thirdDate="2022-03-10" thirdDate-constraint="0" expand="true"/>
+        <task id="18" name="Monter et poser un lit" color="#000066" meeting="false" start="2022-08-04" duration="2" complete="0" thirdDate="2022-07-04" thirdDate-constraint="0" expand="true"/>
+        <task id="19" name="Monter une armoire" color="#000066" meeting="false" start="2022-08-05" duration="2" complete="0" thirdDate="2022-07-01" thirdDate-constraint="0" expand="true"/>
+        <task id="20" name="Poser un bureau et une chaise/fauteuil" color="#000066" meeting="false" start="2022-08-06" duration="2" complete="0" thirdDate="2022-03-10" thirdDate-constraint="0" expand="true"/>
+        <task id="21" name="Raccorder une suspension luminaire" color="#000066" meeting="false" start="2022-08-07" duration="2" complete="0" thirdDate="2022-07-01" thirdDate-constraint="0" expand="true"/>
+        <task id="22" name="Poser la décoration" color="#000066" meeting="false" start="2022-08-08" duration="2" complete="0" thirdDate="2022-03-10" thirdDate-constraint="0" expand="true"/>
+        <task id="23" name="MARGE" color="#cc0000" meeting="false" start="2022-07-20" duration="13" complete="0" thirdDate="2022-07-11" thirdDate-constraint="0" expand="true"/>
+        <task id="24" name="MARGE 2" color="#cc0000" meeting="false" start="2022-08-09" duration="23" complete="0" thirdDate="2022-08-09" thirdDate-constraint="0" expand="true"/>
+    </tasks>
+    <resources>
+        <resource id="0" name="Mon père" function="Default:0" contacts="" phone=""/>
+        <resource id="1" name="Jimmy" function="Default:0" contacts="" phone=""/>
+        <resource id="2" name="Moi (chef de projet)" function="Default:1" contacts="" phone=""/>
+        <resource id="3" name="Sacha" function="Default:0" contacts="" phone=""/>
+        <resource id="4" name="Sonia" function="Default:0" contacts="" phone=""/>
+        <resource id="5" name="Artisan" function="Default:0" contacts="" phone=""/>
+        <resource id="6" name="Menuisier" function="Default:0" contacts="" phone=""/>
+        <resource id="7" name="Plombier" function="Default:0" contacts="" phone=""/>
+        <resource id="8" name="Spécialiste de la ventilation" function="Default:0" contacts="" phone=""/>
+    </resources>
+    <allocations>
+        <allocation task-id="0" resource-id="0" function="Default:0" responsible="true" load="100.0"/>
+        <allocation task-id="7" resource-id="0" function="Default:0" responsible="true" load="100.0"/>
+        <allocation task-id="8" resource-id="0" function="Default:0" responsible="true" load="100.0"/>
+        <allocation task-id="9" resource-id="0" function="Default:0" responsible="true" load="100.0"/>
+        <allocation task-id="19" resource-id="0" function="Default:0" responsible="true" load="100.0"/>
+        <allocation task-id="0" resource-id="1" function="Default:0" responsible="true" load="100.0"/>
+        <allocation task-id="1" resource-id="1" function="Default:0" responsible="true" load="100.0"/>
+        <allocation task-id="5" resource-id="1" function="Default:0" responsible="true" load="100.0"/>
+        <allocation task-id="18" resource-id="1" function="Default:0" responsible="true" load="100.0"/>
+        <allocation task-id="19" resource-id="1" function="Default:0" responsible="false" load="100.0"/>
+        <allocation task-id="1" resource-id="2" function="Default:1" responsible="true" load="100.0"/>
+        <allocation task-id="4" resource-id="2" function="Default:1" responsible="true" load="100.0"/>
+        <allocation task-id="13" resource-id="2" function="Default:1" responsible="true" load="100.0"/>
+        <allocation task-id="18" resource-id="2" function="Default:1" responsible="true" load="100.0"/>
+        <allocation task-id="20" resource-id="2" function="Default:1" responsible="true" load="100.0"/>
+        <allocation task-id="12" resource-id="3" function="Default:0" responsible="true" load="100.0"/>
+        <allocation task-id="21" resource-id="3" function="Default:0" responsible="true" load="100.0"/>
+        <allocation task-id="5" resource-id="4" function="Default:0" responsible="true" load="100.0"/>
+        <allocation task-id="22" resource-id="4" function="Default:0" responsible="true" load="100.0"/>
+        <allocation task-id="3" resource-id="5" function="Default:0" responsible="true" load="100.0"/>
+        <allocation task-id="2" resource-id="6" function="Default:0" responsible="true" load="100.0"/>
+        <allocation task-id="6" resource-id="6" function="Default:0" responsible="true" load="100.0"/>
+        <allocation task-id="16" resource-id="6" function="Default:0" responsible="true" load="100.0"/>
+        <allocation task-id="11" resource-id="7" function="Default:0" responsible="true" load="100.0"/>
+        <allocation task-id="10" resource-id="8" function="Default:0" responsible="true" load="100.0"/>
+    </allocations>
+    <vacations/>
+    <previous/>
+    <roles roleset-name="Default"/>
+</project>
