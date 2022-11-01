@@ -1,0 +1,317 @@
+/*commun à toutes les pages*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+    @media only screen and (max-width: 767px) {box-sizing: border-box;}
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+
+@media (prefers-color-scheme: dark) {
+    body {
+    color: #fefefe;
+    background: rgb(59, 58, 58) no-repeat;
+    background-image: none;
+    }
+    a {
+    color: #282829;
+    }
+    img {
+    filter: grayscale(70%);
+    }
+  }
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+
+body {
+    line-height: 1;
+    cursor:pointer;
+    background-image: url(velin.jpg);
+    overflow-x: hidden; 
+    margin-top: 0;
+    
+}
+body, html {
+    height:100%;
+    table-layout: fixed;
+}
+
+.logo {
+    height: 150px;
+    width: 150px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    border: 3px #363B48 solid;
+}
+
+.menu {
+    font-size: 1em;
+    font-family: Courier New;
+    display: flex;           /* Transformation en flexbox */
+    padding:0;                  /* Suppression des marges internes */
+    justify-content: center;   /* Alignements des liens dans le menu */
+}
+
+.menu-active,
+.menu-active:active {    
+    color: white;   /* Quand le visiteur sélectionne le lien */
+    background-color: white;
+    border: 3px #363B48 solid;
+}
+
+.menu a {
+
+    min-width: 150px;             /* Largeur minimale des liens */   
+    color: black;
+    margin: 0.5rem;                /* Marges externes */
+    padding: 0.7rem 0;            /* Marges internes */
+    text-align: center;           /* Centrage du texte */   
+    text-decoration: none;        /* Suppression du soulignement */
+    border-radius: 4px;           /* Arrondis des bordures */
+    border: 3px white ouset;   /*bordure*/
+}  
+
+nav,section{
+    margin-top: 3em; 
+}
+
+hr 
+    {color: rgba(102, 95, 95, 0.8);
+
+}
+
+/*FOOTER*/
+.footer-basic {
+    padding:40px 0;
+    background-color:#181414;
+    color:#ffffff;
+  }
+  
+  .footer-basic ul {
+    padding:0;
+    list-style:none;
+    text-align:center;
+    font-size:18px;
+    line-height:1.6;
+    margin-bottom:0;
+  }
+  
+  .footer-basic li {
+    padding:0 10px;
+  }
+  
+  .footer-basic .list {
+    font-size: 30px;
+  }
+  
+  .footer-basic a {
+    color:inherit;
+    text-decoration:none;
+    opacity:0.8;
+  }
+  
+  .footer-basic a:hover {
+    opacity:1;
+  }
+  
+  .footer-basic .social {
+    text-align:center;
+    padding-bottom:25px;
+  }
+  
+  .footer-basic .social > a {
+    display:inline-block;
+    text-align:center;
+    border-radius:50%;
+    margin:0 8px;
+    color:inherit;
+    opacity:0.75;
+  }
+  
+  .footer-basic .social > a:hover {
+    opacity:2;
+  }
+  
+  .footer-basic .copyright {
+    margin-top:15px;
+    text-align:center;
+    font-size:13px;
+    color:#aaa;
+    margin-bottom:0;
+  }
+/*FIN DU FOOTER*/
+div {
+    margin-top: 5em;
+}
+  
+/*Commun à toutes les pages (fin)*/
+
+/*GROS TITRE*/
+
+h1 {
+	font-family: 'Abril Fatface', cursive;
+    font-weight: 100;
+    font-size: 3em;
+    position: relative;
+    left: 8em;
+    z-index: 2;
+}
+.rectangle {
+    width:40%;
+	height:50px;
+	background-color: #FBFBFB;
+    position: relative;
+    left: 40em;
+    bottom: 4em;
+    z-index: 1;
+    transition-property: background-color;
+    transition-duration: 0.3s;
+}
+
+.rectangle:hover {
+    background-color: #dad3d3;
+}
+
+.citation {
+    -webkit-transition: all 0.1s;
+    -moz-transition: all 0.1s;
+    -ms-transition: all 0.1s;
+    -o-transition: all 0.1s;
+    transition: all 0.1;
+    width: 20em;
+    height: auto;
+    position: relative;
+    z-index: 2;
+    left: 55em;
+    bottom: 5em;
+
+}
+
+.citation:hover {
+    transform:scale(1.3);
+}
+
+.rectangle1 {
+
+    width:40%;
+	height:50px;
+    background-color: #3a3939;  
+    position: relative;
+    left: 20em;
+    bottom: 1em;
+    z-index: 1;
+    transition-property: background-color;
+    transition-duration: 0.3s;
+}
+
+.rectangle1:hover {
+    background-color: #FBFBFB;
+}
+
+.citation1 {
+    -webkit-transition: all 0.1s;
+    -moz-transition: all 0.1s;
+    -ms-transition: all 0.1s;
+    -o-transition: all 0.1s;
+    transition: all 0.1;
+    width: 17em;
+    height: auto;
+    position: relative;
+    z-index: 2;
+    left: 10em;
+    bottom: 3em;
+}
+
+.citation1:hover {
+    transform:scale(1.3);
+}
+
+/*FORMULAIRE*/
+
+
+form {
+    /* Centrer le formulaire sur la page */
+    margin: auto;
+    width: 50%;
+    /* Encadré pour voir les limites du formulaire */
+    padding: 15em;
+    border: 2px solid rgb(0, 0, 0);
+}
+  
+
+label {
+    /* Pour être sûrs que toutes les étiquettes ont même taille et sont correctement alignées */
+    display: inline;
+    text-align: center;
+    margin: auto;
+    /* Pour s'assurer que tous les champs texte ont la même police */    
+    font-size: 1.8em;
+    font-family: 'Amatic SC', cursive;
+}
+  
+input, 
+textarea {
+    /* Pour s'assurer que tous les champs texte ont la même police   */
+    font-size: 1em;
+    font-family: 'Kalam', cursive;
+    /* Pour que tous les champs texte aient la même dimension */
+    width: 100%;
+    /* Pour harmoniser le look et bordures des champs texte */
+    border: double;
+    line-height: 2em;
+}
+  
+textarea {
+    /* Pour aligner les champs texte avec leur étiquette */
+    vertical-align: top;
+  
+    /* Pour donner assez de place pour écrire du texte */
+    height: 6em;
+}
+
+button {
+    margin-top: 3em; 
+}
+.button_reset {
+    margin-left: 3em;
+}
+.button_envoyer, 
+.button_reset {
+    display: inline-block;
+    padding: 5px 10px;
+    background-color: white;
+    border: 1px solid #303233;
+    color: #101111;
+}
+ 
+.button_envoyer:hover, .button_envoyer:focus, .button_reset:hover, .button_reset:focus {
+    background: #e9e4e4;
+    text-shadow: 0 -1px #eee;
+}
+ 
+.button_envoyer:active, .button_reset:active {
+    background: #bcc1c2;
+    text-shadow: 0 -1px #eee;
+    border: 1px solid #363634;
+}
+
+  

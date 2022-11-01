@@ -1,0 +1,186 @@
+/*commun à toutes les pages*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+
+@media (prefers-color-scheme: dark) {
+  body {
+  color: #fefefe;
+  background: rgb(59, 58, 58) no-repeat;
+  background-image: none;
+  }
+  a {
+  color: #282829;
+  }
+  img {
+  filter: grayscale(70%);
+  }
+}
+
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+
+body {
+    line-height: 1;
+    cursor:pointer;
+    background-image: url(velin.jpg);
+    overflow-x: hidden; 
+    margin-top: 0;
+    
+}
+body, html {
+    height:100%;
+    table-layout: fixed;
+}
+
+.logo {
+    height: 150px;
+    width: 150px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    border: 3px #363B48 solid;
+}
+
+.menu {
+    font-size: 1em;
+    font-family: Courier New;
+    display: flex;           /* Transformation en flexbox */
+    padding:0;                  /* Suppression des marges internes */
+    justify-content: center;   /* Alignements des liens dans le menu */
+}
+
+.menu-active,
+.menu-active:active {    
+    color: white;   /* Quand le visiteur sélectionne le lien */
+    background-color: white;
+    border: 3px #363B48 solid;
+}
+
+.menu a {
+
+    min-width: 150px;             /* Largeur minimale des liens */   
+    color: black;
+    margin: 0.5rem;                /* Marges externes */
+    padding: 0.7rem 0;            /* Marges internes */
+    text-align: center;           /* Centrage du texte */   
+    text-decoration: none;        /* Suppression du soulignement */
+    border-radius: 4px;           /* Arrondis des bordures */
+    border: 3px white ouset;   /*bordure*/
+}  
+
+nav,section{
+    margin-top: 3em; 
+}
+
+hr 
+    {color: rgba(102, 95, 95, 0.8);
+
+}
+
+/*FOOTER*/
+
+.footer-basic {
+  padding:40px 0;
+  background-color:#181414;
+  color:#ffffff;
+}
+
+.footer-basic ul {
+  padding:0;
+  list-style:none;
+  text-align:center;
+  font-size:18px;
+  line-height:1.6;
+  margin-bottom:0;
+}
+
+.footer-basic li {
+  padding:0 10px;
+}
+
+.footer-basic .list {
+  font-size: 30px;
+}
+
+.footer-basic a {
+  color:inherit;
+  text-decoration:none;
+  opacity:0.8;
+}
+
+.footer-basic a:hover {
+  opacity:1;
+}
+
+.footer-basic .social {
+  text-align:center;
+  padding-bottom:25px;
+}
+
+.footer-basic .social > a {
+  display:inline-block;
+  text-align:center;
+  border-radius:50%;
+  margin:0 8px;
+  color:inherit;
+  opacity:0.75;
+}
+
+.footer-basic .social > a:hover {
+  opacity:2;
+}
+
+.footer-basic .copyright {
+  margin-top:15px;
+  text-align:center;
+  font-size:13px;
+  color:#aaa;
+  margin-bottom:0;
+}
+
+/*FIN DU FOOTER*/
+div {
+    margin-top: 5em;
+}
+  
+/*Commun à toutes les pages (fin)*/
+
+h1 {
+    font-size: 3em;
+    font-family: 'Shadows Into Light', cursive;
+    text-align: center;
+}
+
+.citation {
+  position: relative;
+  left: 20em;
+  -webkit-transition: all 0.2s;
+  -moz-transition: all 0.2s;
+  -ms-transition: all 0.2s;
+  -o-transition: all 0.2s;
+  transition: all 0.2s;
+}
+
+img:hover {
+  transform:scale(1.3);
+}

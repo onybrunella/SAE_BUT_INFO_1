@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="FR">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="user-scalable=yes">
+    <title>Formulaire | Mariage de Justine et Sébastien</title>
+    <link rel="stylesheet" href="Mariage/Formulaire.css">
+    <link rel="icon" type="image/png" sizes="16x16" href="images/logo.jpg">
+    <link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Raleway:wght@100&family=Shadows+Into+Light&display=swap" rel="stylesheet"> 
+    <link href="https://fonts.googleapis.com/css2?family=Amatic+SC&display=swap" rel="stylesheet"> 
+    <link href="https://fonts.googleapis.com/css2?family=Kalam&family=Permanent+Marker&display=swap" rel="stylesheet"> 
+</head>
+<body>
+<header>
+<!--Logo-->    
+<img src="images/logo.jpg" alt="logo du site" class="logo"/>
+</header>
+<!--Menu-->
+<nav class="menu">
+    <a href="Index.html">Accueil</a>
+    <a href="Galerie_Photo.html">Galerie Photo</a>
+    <a href="Programme.html">Programme</a>
+    <a class ="menu-active" href="Formulaire.html">Formulaire</a>
+    <a href="Livre_or.html">Livre d'or</a>
+    <a href="Contact.html">Contact</a>
+</nav>
+
+
+<hr/>
+
+<!--Formulaire-->
+<section class="Formulaire">
+    <h1>Formulaire à remplir obligatoirement</h1>
+    <div class="rectangle"></div>
+    <img src="images/citation14.jpg" alt="Le mariage c'est la volonté à deux de créer l'unique - Freud Nietzche" class="citation">
+    <div class="rectangle1"></div>
+    <img src="images/citation2.jpg" alt="Mon bonheur à moi, c'est nos moments à nous - Auteur inconnu" class="citation1">
+
+<form method="post">
+
+    <div class="nom">
+        <label for="nom">Votre nom :</label>
+        <input type="text" name="nom" id="user_nom" placeholder="Ex : Garamond" />
+    </div>
+
+    <div class="prenom">
+        <label for="prenom">Votre prénom :</label>
+        <input type="text" name="prenom" id="user_prenom" placeholder="Ex : Sébastien" />
+    </div>
+
+    <div class="age">
+        <label for="age">Votre âge :</label>
+        <input type="text" name="age" id="user_age" placeholder="Ex : 37 ans" />
+    </div>
+
+    <div class="sexe">
+        <label for="age">Votre sexe :</label>
+        <input type="text" name="sexe" id="user_sex" placeholder="Ex : femme" />
+    </div>
+
+    <div class="participation">
+        <label for="accompagnateur">Votre participation au mariage le 27 août 2022</label>
+        <input type="radio" name="participation" value="oui" id="oui" /> <label for="participation">Oui</label>
+        <input type="radio" name="participation" value="non" id="non" /> <label for="participation">Non</label>
+    </div>
+
+    <div class="email">
+        <label for="mail">Votre E-mail :</label>
+        <input type="email" id="mail" name="user_mail" placeholder="Ex : brunella.andria@gmail.com"/>
+    </div>
+
+    <div class="telephone">
+        <label for="tel">Votre numéro de téléphone :</label>
+        <input type="tel" id="user_tel" placeholder="Ex : 0764836358"/>
+    </div>
+
+    <div class="pays">
+        <label for="pays">De quel pays venez-vous ?</label>
+        <input type="checkbox" name="pays" /> <label for="pays">France</label>
+        <input type="checkbox" name="pays" /> <label for="pays">Madagascar</label>
+    </div>
+
+    <div class="handicap">
+        <label for="handicap">Etes-vous en situtation d'handicap ?</label>
+        <input type="radio" name="handicap" value="oui" id="oui"/> <label for="handicap">Oui</label>
+        <input type="radio" name="handicap" value="non" id="non"/> <label for="handicap">Non</label>
+    </div>
+
+    <div class="handicap-check">
+        <label for="handicap-check">Si oui, de quelle type ? (si vous êtes atteint de poly ou plurihandicap, veuillez cocher tous les types correspondant)</label>
+        <input type="checkbox" name="handicap-check" /> <label for="handicap-check">Le handicap moteur</label>
+        <input type="checkbox" name="handicap-check" /> <label for="handicap-check">Le handicap auditif</label>
+        <input type="checkbox" name="handicap-check" /> <label for="handicap-check">Le handicap visuel</label>
+        <input type="checkbox" name="handicap-check" /> <label for="handicap-check">Le handicap cognitif / mental / psychique</label>
+    </div>
+    <div class="PS"><label for="PS">PS: Le lieu de la fête a la capacité d'accueilir les personnes à mobilité réduite !</label></div>
+
+    <div>
+        <label for="handicap_text">Quel est le nom de votre handicap ou de vos handicaps ?</label>
+        <textarea name="handicap_text" id="handicap_text" rows="10" cols="50"></textarea> 
+    </div>
+
+    <div class="accompagnateur">
+        <label for="accompagnateur">Seriez-vous accompagnez ?</label>
+        <input type="radio" name="accompagnateur" value="oui" /> <label for="accompagnateur">Oui</label>
+        <input type="radio" name="accompagnateur" value="non" /> <label for="accompagnateur">Non</label>
+    </div>
+
+    <div class="accompagnateur_number">
+        <label for="accompagnateur_number">Si oui, par combien de personnes ?</label>
+        <input type="number" name="accompagnateur_number" value="0" min="0" max="100" step="1"/>
+    </div>
+
+    <div class="enfant">
+        <label for="enfant">Parmi ces personnes, il y a t-il des enfants ?</label>
+        <input type="radio" name="enfant" value="oui" /> <label for="enfant">Oui</label>
+        <input type="radio" name="enfant" value="non" /> <label for="enfant">Non</label>
+    </div>
+
+    <div class="enfant_number">
+        <label for="enfant">Si oui, combien sont-ils ?</label>
+        <input type="number" name="enfant_number" value="0" min="0" max="100" step="1"/>
+    </div>
+    
+    <div class="handicap_accompagnateur">
+        <label for="handicap-accompagnateur">Parmi ces personnes, il y a-t-il des personnes en situation d'handicap ?</label>
+        <input type="radio" name="handicap-accompagnateur" value="oui" /> <label for="handicap-accompagnateur">Oui</label>
+        <input type="radio" name="handicap-accompagnateur" value="non" /> <label for="handicap-accompagnateur">Non</label>
+    </div>
+
+    <div class="handicap_accompagnateur_number">
+        <label for="handicap_accompagnateur_number">Si oui, combien sont-ils ?</label>
+        <input type="number" name="enfant" value="0" min="0" max="100" step="1"/>
+    </div>
+
+    <div class="handicap-check">
+        <label for="handicap-check">De quelle type ? (si vous êtes atteint de poly ou plurihandicap, veuillez cocher tous les types correspondant)</label>
+        <input type="checkbox" name="handicap-check" /> <label for="handicap-check">Le handicap moteur</label>
+        <input type="checkbox" name="handicap-check" /> <label for="handicap-check">Le handicap auditif</label>
+        <input type="checkbox" name="handicap-check" /> <label for="handicap-check">Le handicap visuel</label>
+        <input type="checkbox" name="handicap-check" /> <label for="handicap-check">Le handicap cognitif / mental / psychique</label>
+    </div>
+
+    <div>
+        <label for="handicap_text">Quel est le nom de cet handicap ou de ces handicaps ?</label>
+        <textarea name="handicap_text" id="handicap_text" rows="10" cols="50"></textarea> 
+    </div>
+
+    <div class="allergie">
+        <label for="allergie">Avez-vous des allergies alimentaires ?</label>
+        <input type="radio" name="allergie" value="oui" /> <label for="allergie">Oui</label>
+        <input type="radio" name="allergie" value="non" /> <label for="allergie">Non</label>
+    </div>
+
+    <div class="allergie_text">
+        <label for="allergie_text">Si oui, lesquelles ?</label>
+        <textarea name="allergie_text" id="allergie" rows="10" cols="50"></textarea> 
+    </div>
+
+    <div class="alimentaire">
+        <label for="alimentaire">Quelle régime alimentaire adoptez-vous ?</label>
+        <input type="checkbox" name="alimentaire" /> <label for="alimentaire">Le véganisme</label>
+        <input type="checkbox" name="alimentaire" /> <label for="alimentaire">Le végétalisme</label>
+        <input type="checkbox" name="alimentaire" /> <label for="alimentaire">Le végétarisme</label>
+        <input type="checkbox" name="alimentaire" /> <label for="alimentaire">Le pesco-végétarisme</label>
+        <input type="checkbox" name="alimentaire" /> <label for="alimentaire">Le pescétarisme</label>
+        <input type="checkbox" name="alimentaire" /> <label for="alimentaire">Le flexitarisme</label>
+        <input type="checkbox" name="alimentaire" /> <label for="alimentaire">Sans lactose</label>
+        <input type="checkbox" name="alimentaire" /> <label for="alimentaire">Sans gluten</label>
+        <input type="checkbox" name="alimentaire" /> <label for="alimentaire">Cétogène</label>
+    </div>
+
+
+    <div class="hebergement">
+        <label for="hébergement">Auriez-vous besoin d'un hébergement ?</label>
+        <input type="radio" name="hebergement" value="oui" /> <label for="hébergement">Oui</label>
+        <input type="radio" name="hebergement" value="non" /> <label for="hébergement">Non</label>
+    </div>
+
+    <div class="hebergement_number">
+        <label for="hébergement">Si oui, pour combien de personnes ?</label>
+        <input type="number" name="hebergement_number" value="0" min="0" max="100" step="1"/>
+    </div>
+
+    <div class="halal">
+        <label for="halal">Consommez-vous des aliments de type halal ?</label>
+        <input type="radio" name="halal" value="oui" /> <label for="halal">Oui</label>
+        <input type="radio" name="halal" value="non" /> <label for="halal">Non</label>
+    </div>
+
+    <div class="halal_accompagnateur">
+        <label for="halal_accompagnateur">Votre ou vos personnes accompagnateurs consomment-il des aliments de type halal ?</label>
+        <input type="radio" name="halal_accompagnateur" value="oui" /> <label for="halal_accompagnateur">Oui</label>
+        <input type="radio" name="halal_accompagnateur" value="non" /> <label for="halal_accompagnateur">Non</label>
+    </div>
+
+    <div class="voiture">
+        <label for="voiture">Auriez-vous besoin d'un véhicule pour se rendre à la réception ?</label>
+        <input type="radio" name="voiture" value="oui" /> <label for="voiture">Oui</label>
+        <input type="radio" name="voiture" value="non" /> <label for="voiture">Non</label>
+    </div>
+
+    <div class="voiture_number">
+        <label for="voiture_number">Si oui, pour combien de personnes ?</label>
+        <input type="number" name="voiture_number" value="0" min="0" max="10" step="1"/>
+    </div>
+
+    <div>
+        <label for="précision">Avez-vous des précisions à rajouter ?</label>
+        <textarea name="précision" id="précision" rows="10" cols="50"></textarea> 
+    </div>
+
+    <button class="button_envoyer" type="submit" >Envoyer votre message</button>
+    <button class="button_reset" type="reset" value="Annuler" >Annuler</button>
+</form>
+</section>
+
+<div class="footer-basic" alt="Bas de page du site internet">
+    <footer class="footer">
+        <div class="social">
+            <ul class="social-list">
+            <li>Résaux sociaux de l'organisatrice de notre cérémonie de mariage</li>
+            </ul>
+            <a href="#" alt="Page Instagram de l'organisatrice de l'évènement"><h6>Instagram</h6><i class="social-instagram"></i></a>
+            <a href="#" alt="Page Linkedin de l'organisatrice de l'évènement"><h6>Linkedin</h6><i class="social-linkedin"></i></a>
+            <a href="#" alt="Page Twitter de l'organisatrice de l'évènement"><h6>Twitter</h6><i class="social-twitter"></i></a>
+            <a href="#" alt="Page Facebook de l'organisatrice de l'évènement"><h6>Facebook</h6><i class="social-facebook"></i></a>
+        </div>
+        <ul class="list">
+            <li>Plan du site</li>
+                <ul class="list-inline">
+            <li class="list-inline-item" alt="Page d'accueil"><a href="Index.html">Accueil</a></li>
+            <li class="list-inline-item" alt="Page Galerie photo"><a href="Galerie_Photo.html">Galerie Photo</a></li>
+            <li class="list-inline-item" alt="Page Programme de la journée"><a href="Programme.html">Programme</a></li>
+            <li class="list-inline-item" alt="Page Formulaire"><a href="Formulaire.html">Formulaire</a></li>
+            <li class="list-inline-item" alt="Page Livre d'or"><a href="Livre_or.html">Livre d'or</a></li>
+            <li class="list-inline-item" alt="Page Contact des mariés et de l'organisatrice"><a href="Contact.html">Contact</a></li>
+                </ul>
+            </li>
+        </ul>
+        <p class="copyright">Ony ANDRIATSAHAVOJAONA © 2022</p>
+</footer>
+</body>
+</html>
