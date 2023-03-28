@@ -1,3 +1,3 @@
-- Langages de programmation / Technologies : Java
+- Langages de programmation / Technologies : Java, VS Code
 - Projet effectué en binôme
 - Durée : 1 mois
