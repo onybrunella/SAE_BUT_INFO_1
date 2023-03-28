@@ -1,4 +1,4 @@
-- Langages de programmation/Technologies : HTML, CSS,
+- Langages de programmation/Technologies : HTML, CSS, VS Code
 - Projet effectué seule
 - Durée : 2 mois
 - Note obtenue : 20/20
