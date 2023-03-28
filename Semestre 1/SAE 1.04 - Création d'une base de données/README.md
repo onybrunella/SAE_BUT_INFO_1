@@ -1,0 +1,3 @@
+- Langages de programmation/Technologies : PostgreSQL, SQL, Jupyter notebook
+- Projet effectué en binôme
+- Durée : 3 mois
