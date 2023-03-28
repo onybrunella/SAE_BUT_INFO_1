@@ -1,2 +1,3 @@
+- Langagages de programmation/Technologies utilisés : Bash, Raspberry PI
 - Projet effectué seule
-- 
+- Durée : 1 mois
