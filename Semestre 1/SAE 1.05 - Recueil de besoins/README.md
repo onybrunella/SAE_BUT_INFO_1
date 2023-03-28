@@ -1,0 +1,3 @@
+- Langages de programmation/Technologies : HTML, CSS,
+- Projet effectué seule
+- Durée : 2 mois
