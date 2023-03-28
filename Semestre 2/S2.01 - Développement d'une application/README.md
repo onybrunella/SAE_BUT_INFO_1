@@ -1,0 +1,3 @@
+- Langages de programmation / Technologies : Java
+- Projet effectué en binôme
+- Durée : 1 mois
