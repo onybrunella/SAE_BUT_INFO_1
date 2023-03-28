@@ -1,3 +1,3 @@
-- Langages de programmation/Technologie : Python
+- Langages de programmation/Technologie : Python, Jupyter Notebook
 - Projet effectué en binôme
 - Durée : 1 mois
