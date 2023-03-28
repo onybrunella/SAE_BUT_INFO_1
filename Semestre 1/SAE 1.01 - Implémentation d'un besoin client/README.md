@@ -1,0 +1,3 @@
+- Langages de programmation/Technologie : Python
+- Projet effectué en binôme
+- Durée : 1 mois
