@@ -1,0 +1,3 @@
+- Langages de programmation / Technologies : Bash, Raspberry PI
+- Projet effectué seule
+- Durée
